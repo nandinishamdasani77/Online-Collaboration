@@ -1,7 +1,22 @@
-<html>
+<html lang="en" ng-app="CollaborationApp">
 <head> <title> first angular project </title>
+<!--  load the angular library -->
+<script src="./bower_components/angular/angular.js"></script>
+<!--  load the angular-route library -->
+<script src="./bower_components/angular-route/angular-route.js"></script>
+
+
+</head>
 <body>
 
-MY first Project </body>
+{{10+20}}
+<div ng-view> </div>
 
+<!--load the main module -->
+<script src="./app/app.module.js"></script>
+<script src="./app/app.route.js"></script>
+<!--load the basic module -->
+<script src="./app/components/basic/BasicService.js"></script>
+<script src="./app/components/basic/BasicController.js"></script>
+</body>
 </html>
